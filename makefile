@@ -11,4 +11,4 @@ lint:
 	pylint --disable=R,C flip_coins.py
 
 test: 
-	python -m pytest -vv --cov=flip_coins.py test_flip_coins.py
+	python -m pytest -vv --cov=flip_coins test_flip_coins.py
