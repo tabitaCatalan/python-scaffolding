@@ -14,4 +14,8 @@ def test_coins_summary():
     calculated_summary = flip_coins.coins_summary(coins)
     assert real_summary['head'] == calculated_summary['head']
     assert real_summary['tail'] == calculated_summary['tail'] 
-z
+
+def test_coins_to_str():
+    coins = ['head', 'tail', 'head', 'head', 'head', 'tail', 'tail']
+    expr = "o x o o o x x "
+    assert flip_coins.coins_to_str(coins) == expr
